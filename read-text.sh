@@ -1,9 +1,9 @@
 #!/bin/bash
 #echo this is to read and find 
-while lin in read line 
+while read line 
  do 
-  if [ "$lin" == "amp" ]
+  if [ "$line" == "amp" ]
    then
     echo"file contain the value $lin"
    fi 
- done
+ done < file.txt
